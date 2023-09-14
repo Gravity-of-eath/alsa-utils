@@ -169,3 +169,8 @@ jobs:
     - name: Install
       run: |
         make install
+    - name: Archive package
+      uses: actions/upload-artifact@v1
+      with:
+        name: alsa-utils
+        path: artifacts/
